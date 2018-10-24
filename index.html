@@ -29,13 +29,32 @@
 			<section class="main-nav-search">
 				<h2 class="visually-hidden">Поиск</h2>
 
-				<!-- форма поиска -->
+				 <form action="#" method="get">
+				 	<label for="main-search" class="visually-hidden">Поиск по сайту</label>
+				 	<input id="main-search" type="text" name="main-nav-search" placeholder="Что ищем?">
+				 </form>
 			</section>
 
 			<section class="user-area">
 				<h2 class="visually-hidden">Личный кабинет</h2>
 
-				<!-- Личный кабинет -->
+				<form method="get" action="#" class="user-area-form">
+					<p>
+						<label for="user-area-mail" class="visually-hidden">Электронная почта</label>
+						<input id="user-area-mail" type="text" name="user-area-mail" placeholder="Электронная почта">
+					</p>
+
+					<p>
+						<label for="user-area-pass" class="visually-hidden">Пароль</label>
+						<input id="user-area-pass" type="password" name="user-area-pass" placeholder="Пароль">
+					</p>
+
+					<button type="submit">Войти</button>
+				</form>
+
+				<a href="#">Забыли пароль?</a>
+
+				<a href="#">Новая регистрация</a>
 			</section>
 			
 			<section class="basket">
@@ -191,7 +210,13 @@
 		<section class="shop-distribution">
 			<h2 class="visually-hidden">Рассылка</h2>
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-			<!-- форма ввода почты -->
+			
+			<form>
+				<label for="shop-distribution-mail" class="visually-hidden">Почта для рассылки</label>
+				<input type="text" name="shop-distribution-mail" placeholder="Электронная почта">
+
+				<button type="submit">Отправить</button>
+			</form>
 		</section>
 
 		<section class="map">
@@ -239,7 +264,27 @@
 	<section class="feedback">
 		<h2 class="visually-hidden">Обратная связь</h2>
 		<p><b>Мы обязательно вам ответим</b></p>
-		<!-- форма обратной связи -->
+		
+		<form method="get" action="#" class="feedback-form">
+			<p>
+				<label for="feedback-user-name" class="visually-hidden">Как вас зовут?</label>
+				<input id="feedback-user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+			</p>
+
+			<p>
+				<label for="feedback-user-mail" class="visually-hidden">Ваша почта для ответа?</label>
+				<input id="feedback-user-mail" type="text" name="feedback-user-mail" placeholder="Ваша почта для ответа">
+			</p>
+
+			<p>
+				<label for="feedback-user-message" class="visually-hidden">Напишите что-нибудь</label>
+				<textarea id="feedback-user-message" name="user-message" placeholder="Напишите что-нибудь..."></textarea>
+			</p>
+
+			<p>
+				<button type="submit">Отправить</button>
+			</p>
+		</form>
 	</section>
 </body>
 </html>
