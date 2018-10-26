@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gllacy shop</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -11,10 +14,10 @@
 				<img src="img/Logo.svg" alt="logo">
 			</div>
 
-			<ul>
+			<ul class="main-nav-menu">
 				<li>
 					<a href="#">Каталог</a>
-					<ul>
+					<ul class="main-nav-submenu">
 						<li><a href="#">Новинки</a></li>
 						<li><a href="#">Сливочное</a></li>
 						<li><a href="#">Щербеты</a></li>
@@ -28,6 +31,7 @@
 
 			<section class="main-nav-search">
 				<h2 class="visually-hidden">Поиск</h2>
+				<a href="#" class="main-nav-links">Лупа</a>
 
 				 <form action="#" method="get">
 				 	<label for="main-search" class="visually-hidden">Поиск по сайту</label>
@@ -37,6 +41,7 @@
 
 			<section class="user-area">
 				<h2 class="visually-hidden">Личный кабинет</h2>
+				<a href="#" class="login-link main-nav-links">Вход</a>
 
 				<form method="get" action="#" class="user-area-form">
 					<p>
@@ -59,6 +64,7 @@
 			
 			<section class="basket">
 				<h2 class="visually-hidden">Корзина с товарами</h2>
+				<a href="#" class="main-nav-links">Пусто</a>
 
 				<section class="basket-list">
 					<h2 class="visually-hidden">Список покупок</h2>
