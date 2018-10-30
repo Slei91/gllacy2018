@@ -5,7 +5,7 @@ body {
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-size: 16px;
 	line-height: 22px;
-	color: #000;
+	color: #323232;
 
 	background-color: #849d8f;
 }
@@ -15,7 +15,31 @@ a {
 	text-decoration: none;
 }
 
+.link {
+	color: #fff;
+}
+
+.link:hover,
+.link:active {
+	color: #ffbc9e;
+}
+
+.link-bg {
+	color: #323232;
+}
+
+.link-bg:hover,
+.link-bg:active {
+	color: #e84d37;
+}
+
 .btn {
+
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #fff;
+
 	border: none;
 	background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -23,20 +47,16 @@ a {
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
-.btn-small {
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: bold;
-	color: #fff;
-}
-
 .btn:hover {
+	border: none;
     background-image: linear-gradient(#f58669,#ec6f5e);
-    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+    box-shadow: 0px 2px 2px 0px rgb(172, 16, 0);
 }
 
 .btn:active {
+	border: none;
 	background-image: linear-gradient(#e74a35,#f26843);
+	box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
 }
 
 .main-nav ul {
@@ -130,4 +150,123 @@ a.selected {
 .main-nav-contacts span {
 	font-size: 22px;
 	line-height: 24px;
+}
+
+.slide h2 {
+	font-size: 60px;
+	line-height: 60px;
+	color: #fff;
+	text-align: center;
+}
+
+.give-two {
+	font-size: 32px;
+	line-height: 44px;
+}
+
+.promo {
+	color: #fff;
+}
+
+.promo h2 {
+	font-size: 35px;
+	line-height: 41px;
+} 
+
+.promo p {
+	font-size: 18px;
+}
+
+.item {
+	color: #fff;
+}
+
+.item p {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+  	text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.item span {
+	font-size: 30px;
+}
+
+.item h2 {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+}
+
+.features b {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.news-blog p {
+	font-weight: 500;
+}
+
+.news-blog a {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	color: inherit;
+}
+
+.shop-distribution input::placeholder {
+	color: #999999;
+}
+
+.shop-contacts p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.shop-contacts .low {
+	line-height: 22px;
+}
+
+.shop-contacts b {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.shop-contacts .tel {
+	line-height: 22px;
+}
+
+.social-box {
+	list-style: none;
+}
+
+.info-box {
+	list-style: none;
+}
+
+.info-box a {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.info-box b a {
+	font-weight: bold;
+}
+
+.copyright p {
+	font-size: 12px;
+	line-height: 18px;
+	color: #fff;
+}
+
+.feedback b {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+}
+
+.feedback input::placeholder, 
+.feedback textarea::placeholder {
+	color: #999999;
 }
