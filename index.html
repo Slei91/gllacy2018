@@ -9,6 +9,7 @@
 </head>
 <body>
 	<header class="main-header">
+	<div class="container">	
 		<nav class="main-nav">
 			<div class="logo">
 				<img src="img/Logo.svg" alt="logo">
@@ -17,95 +18,99 @@
 			<ul class="main-nav-menu">
 				<li>
 					<a href="#">Каталог</a>
-					<ul class="main-nav-submenu">
+					<!--<ul class="main-nav-submenu">
 						<li><a href="#" class="news">Новинки</a></li>
 						<li><a href="#">Сливочное</a></li>
 						<li><a href="#">Щербеты</a></li>
 						<li><a href="#">Фруктовый лед</a></li>
 						<li><a href="#">Мелорин</a></li>
-					</ul>
+					</ul>-->
 				</li>
 				<li><a href="#">Доставка и оплата</a></li>
 				<li><a href="#">О Компании</a></li>
 			</ul>
 
-			<section class="main-nav-search">
-				<h2 class="visually-hidden">Поиск</h2>
-				<a href="#" class="search-link">Лупа</a>
+			<div class="user-menu">
+				<section class="main-nav-search">
+					<h2 class="visually-hidden">Поиск</h2>
+					<a href="#" class="search-link">Лупа</a>
 
-				 <form action="#" method="get">
-				 	<label for="main-search" class="visually-hidden">Поиск по сайту</label>
-				 	<input id="main-search" type="text" name="main-nav-search" placeholder="Что ищем?">
-				 </form>
-			</section>
-
-			<section class="user-area">
-				<h2 class="visually-hidden">Личный кабинет</h2>
-				<a href="#" class="login-link">Вход</a>
-
-				<form method="get" action="#" class="user-area-form">
-					<p>
-						<label for="user-area-mail" class="visually-hidden">Электронная почта</label>
-						<input id="user-area-mail" type="text" name="user-area-mail" placeholder="Электронная почта">
-					</p>
-
-					<p>
-						<label for="user-area-pass" class="visually-hidden">Пароль</label>
-						<input id="user-area-pass" type="password" name="user-area-pass" placeholder="Пароль">
-					</p>
-
-					<button type="submit" class="btn">Войти</button>
-				</form>
-
-				<a href="#" class="link-bg">Забыли пароль?</a>
-
-				<a href="#" class="link-bg">Новая регистрация</a>
-			</section>
-			
-			<section class="basket">
-				<h2 class="visually-hidden">Корзина с товарами</h2>
-				<a href="#" class="basket-link">Пусто</a>
-
-				<section class="basket-list">
-					<h2 class="visually-hidden">Список покупок</h2>
-
-					<table class="buy-list">
-						<tr>
-							<td><button type="button">x</button></td>
-							<td><img src="img/ice-1-mini.jpg" alt="ice-mini"></td>
-							<td><p>Пломбир с апельсиновым джемом</p></td>
-							<td><p>1,5кг * <span>200 руб.</span></p></td>
-							<td><p>300 руб.</p></td>
-						</tr>
-
-						<tr>
-							<td><button type="button">x</button></td>
-							<td><img src="img/ice-3-mini.jpg" alt="ice-mini"></td>
-							<td><p>Пломбир с апельсиновым джемом</p></td>
-							<td><p>1,5кг * <span>200 руб.</span></p></td>
-							<td><p>300 руб.</p></td>
-						</tr>
-					</table>
-
-					<p><b>Итого: 750 руб</b></p>
-					<a href="#" class="btn">Оформить заказ</a>
+					 <!--<form action="#" method="get">
+					 	<label for="main-search" class="visually-hidden">Поиск по сайту</label>
+					 	<input id="main-search" type="text" name="main-nav-search" placeholder="Что ищем?">
+					 </form>-->
 				</section>
-			</section>
 
-			<p class="main-nav-contacts">
-				С 10 до 20, ежедневно <br>
-				<span>8 812 450-25-25</span>
-			</p>
+				<section class="user-area">
+					<h2 class="visually-hidden">Личный кабинет</h2>
+					<a href="#" class="login-link">Вход</a>
+
+					<!--<form method="get" action="#" class="user-area-form">
+						<p>
+							<label for="user-area-mail" class="visually-hidden">Электронная почта</label>
+							<input id="user-area-mail" type="text" name="user-area-mail" placeholder="Электронная почта">
+						</p>
+
+						<p>
+							<label for="user-area-pass" class="visually-hidden">Пароль</label>
+							<input id="user-area-pass" type="password" name="user-area-pass" placeholder="Пароль">
+						</p>
+
+						<button type="submit" class="btn">Войти</button>
+					</form>
+
+					<a href="#" class="link-bg">Забыли пароль?</a>
+
+					<a href="#" class="link-bg">Новая регистрация</a>-->
+				</section>
+				
+				<section class="basket">
+					<h2 class="visually-hidden">Корзина с товарами</h2>
+					<a href="#" class="basket-link">Пусто</a>
+
+					<!--<section class="basket-list">
+						<h2 class="visually-hidden">Список покупок</h2>
+
+						<table class="buy-list">
+							<tr>
+								<td><button type="button">x</button></td>
+								<td><img src="img/ice-1-mini.jpg" alt="ice-mini"></td>
+								<td><p>Пломбир с апельсиновым джемом</p></td>
+								<td><p>1,5кг * <span>200 руб.</span></p></td>
+								<td><p>300 руб.</p></td>
+							</tr>
+
+							<tr>
+								<td><button type="button">x</button></td>
+								<td><img src="img/ice-3-mini.jpg" alt="ice-mini"></td>
+								<td><p>Пломбир с апельсиновым джемом</p></td>
+								<td><p>1,5кг * <span>200 руб.</span></p></td>
+								<td><p>300 руб.</p></td>
+							</tr>
+						</table>
+
+						<p><b>Итого: 750 руб</b></p>
+						<a href="#" class="btn">Оформить заказ</a>
+					</section>-->
+				</section>
+			</div>
 
 		</nav>
 
-		<div>
+		<div class="header-row">
 			<ul class="breadcrumbs">
 				<li><a href="#">Главная</a></li>
 				<li>Каталог</li>
 				<li>Сливочное</li>
 			</ul>
+
+			<p class="main-nav-contacts">
+				С 10 до 20, ежедневно <br>
+				<span>8 812 450-25-25</span>
+			</p>
 		</div>
+
+	</div>	
 	</header>
 
 	<main>
