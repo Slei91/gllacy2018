@@ -87,7 +87,7 @@ header .container {
 	width: 100%;
 	min-height: 73px;
 	display: flex;
-	justify-content: flex-start;
+	align-items: center;
 
 	outline: 1px solid #fff;
 }
@@ -191,6 +191,7 @@ a.login-link,
 	outline: 1px solid red;
 	display: flex;
 	justify-content: flex-end;
+	align-items: ;
 }
 
 .main-nav-contacts {
