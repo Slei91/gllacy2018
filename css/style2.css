@@ -15,6 +15,24 @@ a {
 	text-decoration: none;
 }
 
+.link {
+	color: #fff;
+}
+
+.link:hover,
+.link:active {
+	color: #ffbc9e;
+}
+
+.link:hover::after,
+.link:active::after {
+	background-color: rgba(255, 188, 158, 0.3);
+}
+
+.breadcrumbs.display {
+	display: none;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -154,6 +172,14 @@ a {
 	background: url(../img/lens.svg) no-repeat;
 }
 
+.user-menu_search > a:hover {
+	background-color: #f8f7f4;
+}
+
+.user-menu_search > a:hover::after {
+	background: url(../img/lens-black.svg) no-repeat;
+}
+
 .user-menu_personal-area > a,
 .user-menu_basket > a {
 	position: relative;
@@ -186,6 +212,16 @@ a {
 	background: url(../img/login.svg) no-repeat;
 }
 
+.user-menu_personal-area > a:hover {
+	color: #323232;
+
+	background-color: #f8f7f4;
+}
+
+.user-menu_personal-area > a:hover::before {
+	background: url(../img/login-black.svg) no-repeat;
+}
+
 .user-menu_basket > a::before {
 	position: absolute;
 	left: 16px;
@@ -197,4 +233,82 @@ a {
 	content: "";
 
 	background: url(../img/basket.svg) no-repeat;
+}
+
+.user-menu_basket .basket-full {
+	color: #323232;
+
+	background-color: #f7f6f3;
+}
+
+.user-menu_basket .basket-full::before {
+	background: url(../img/basket-red.svg) no-repeat;
+}
+
+.breadcrumbs {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	align-self: flex-end;
+
+	font-size: 14px;
+	line-height: 16px;
+
+	list-style: none;
+}
+
+.breadcrumbs li {
+	position: relative;
+
+	margin-right: 6px;
+	padding-right: 15px;
+}
+
+.breadcrumbs li::after {
+	content: "»";
+    position: absolute;
+    top: 0;
+    right: 1px;
+    
+    color: #fff;
+}
+
+.breadcrumbs li:last-child::after {
+	display: none;
+}
+
+.breadcrumbs li:last-child a::after {
+	height: 0;
+}
+
+.breadcrumbs a::after {
+	content: "";
+	display: block;
+	height: 1px;
+	background-color: #a5bbaf;
+}
+
+.header-info {
+	align-self: flex-start;
+	margin-left: auto;
+	width: 170px;
+
+	text-align: right;
+}
+
+.header-info p {
+	margin: 0;
+	padding: 0;
+
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.header-info .phone {
+	margin-top: 3px;
+
+	font-size: 22px;
+	line-height: 24px;
 }
