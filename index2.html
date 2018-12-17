@@ -9,8 +9,8 @@
 </head>
 <body>
 	<div class="color-wrap">
-		<div class="container">
-			<header class="main-header">
+		<header class="main-header">
+			<div class="container">
 				<div class="header-row">
 					<nav class="header-nav">
 						<a href="#" class="logo">
@@ -49,12 +49,14 @@
 					
 					<div class="header-info">
 						<p>С 10 до 20, ежедневно</p> 
-						<p class="phone">8 812 450-25-25</p>
+						<p class="phone"><a href="tel:88124502525">8 812 450-25-25</a></p>
 					</div>
 				</div>
-			</header>
+			</div>
+		</header>
 	
-			<main>
+		<main>
+			<div class="container">
 				<h1 class="visually-hidden">Магазин мороженого Gllacy Shop</h1>
 
 				<section class="main-slider">
@@ -156,16 +158,74 @@
 					</section>
 
 					<section class="subscription-box">
-						<h2 class="visually-hidden">Подписка на рассылку</h2>
-						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-						<form method="post" action="#">
-							<input type="email" name="user-email">
-							<button type="submit">Отправить</button>
-						</form>
+						<div class="subscription-box-wrap">
+							<h2 class="visually-hidden">Подписка на рассылку</h2>
+							<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+							<form method="get" action="#" class="subscription-form">
+								<input type="email" name="user-email" placeholder="Электронная почта">
+								<button type="submit" class="btn">Отправить</button>
+							</form>
+						</div>
 					</section>
 				</div>
-			</main>
-		</div>
+			</div>	
+
+			<div class="map"> <!--на ширину всего вьюпорта-->
+				<div class="container">
+					<img src="img/map.jpg" width="1200" height="430">
+					<section class="site-contacts">
+						<h2 class="visually-hidden">Контактная информация</h2>
+
+						<p>
+							Адрес главного офиса<br> и офлайн-магазина:<br>
+							<span>
+								ул. Большая Конюшенная 19/8, Санкт-Петербург
+							</span>
+						</p>
+						<p>
+							Для заказов по телефону:<br>
+							<span>
+								8 812 450-25-25
+							</span><br>
+							(с 10 до 20 ежедневно)
+						</p>
+						<button class="btn">Форма обратной связи</button>
+					</section>
+				</div>
+			</div>
+		</main>
+
+		<footer class="main-footer">
+			<div class="container">
+				<section class="socials">
+					<h2 class="visually-hidden">Социальные сети</h2>
+					<a href="#" class="tw">Twitter</a>
+					<a href="#" class="ins">Instagram</a>
+					<a href="#" class="fb">facebook</a>
+					<a href="#" class="vk">Вконтакте</a>
+				</section>
+
+				<section class="main-info">
+					<h2 class="visually-hidden">Информация и документация</h2>
+					<ul class="infolinks-list">
+						<li><a href="#">Для поставщиков</a></li>
+						<li><a href="#">Наши документы</a></li>
+						<li><a href="#">О производстве</a></li>
+						<li><a href="#">Экологические стандарты</a></li>
+					</ul>
+				</section>
+
+				<section class="mfr">
+					<h2 class="visually-hidden">Сделано в HTML Academy</h2>
+					<a href="#">
+						<img src="img/logo-htmlacademy-small.svg" alt="HTML Academy" width="108" height="36">
+					</a>
+					<p>
+						Сделано в <a href="#">HTML Academy</a> c 2017
+					</p>
+				</section>
+			</div>	
+		</footer>
 	</div>			
 </body>
 </html>

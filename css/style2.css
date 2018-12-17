@@ -44,6 +44,8 @@ a {
 	background: linear-gradient( 90deg, #e74a35 0%, #f26843 100%);
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	border-radius: 22px;
+	border: none;
+	outline: none;
 }
 
 .btn:hover {
@@ -342,7 +344,6 @@ a {
 
 .color-wrap {
 	min-height: 100vh;
-	width: 1200px;
 	
 	margin: 0 auto;
 
@@ -694,3 +695,180 @@ a {
 	font-weight: bold;
 	text-decoration: underline;
 }
+
+.subscription-box {
+	background: #fff url(../img/mail-bg.jpg);
+	padding: 5px;
+	display: flex;
+}
+
+.subscription-box-wrap {
+	background-color: #f8f7f4;
+	padding: 30px 20px 10px;
+
+	border-radius: 15px;
+}
+
+.subscription-box p {
+	margin: 0;
+	margin-bottom: 35px;
+}
+
+.subscription-form input{
+	box-sizing: border-box;
+	padding: 10px 15px 14px;
+	width: 368px;
+	margin-right: 10px;
+
+	border: 1px solid #b2b2b2;
+	border-radius: 5px;
+}
+
+.subscription-form button{
+	width: 125px;
+	padding: 0;
+	text-align: center;
+}
+
+.subscription-form input::placeholder {
+	color: #999999;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.map img {
+	margin: 0;
+	padding: 0;
+	margin-left: -27px;
+	width: 1200px;
+	height: 430px;
+
+	z-index: 0;
+}
+.map>.container {
+	position: relative;
+}
+
+.site-contacts {
+	position: absolute;
+	right: 27px;
+	top: 63px;
+
+	box-sizing: border-box;
+	padding: 27px 25px;
+
+	min-height: 305px;
+	width: 300px;
+
+	background: #fff;
+	border-radius: 15px;
+	z-index: 10;
+}
+
+.site-contacts p {
+	margin: 0;
+	margin-bottom: 20px;
+
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.site-contacts span {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.site-contacts .btn {
+	margin-top: 8px;
+	width: 100%;
+}
+
+.main-footer {
+	margin-top: 18px;
+}
+
+.main-footer > .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.socials,
+.mfr {
+	width: 267px;
+}
+
+.socials {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main-info {
+	width: 560px;
+}
+
+.socials a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin-top: 12px;
+	margin-right: 11px;
+
+	font-size: 0;
+
+	border-radius: 50%;
+	border: 3px solid rgba(255, 255, 255, 0.5);
+
+	opacity: 0.8;
+}
+
+.socials a:hover {
+	border: 3px solid rgba(255, 255, 255, 0.7);
+	opacity: 1;
+}
+
+.socials a:active {
+	border: 3px solid rgba(255, 255, 255, 0.7);
+	opacity: 0.9;
+}
+
+.socials .tw {
+	background: url(../img/tw.svg) no-repeat;
+}
+
+.socials .ins {
+	background: url(../img/ins.svg) no-repeat;
+}
+
+.socials .fb {
+	background: url(../img/fb.svg) no-repeat;
+}
+
+.socials .vk {
+	background: url(../img/vk.svg) no-repeat;
+}
+
+.infolinks-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	padding-left: 125px;
+	padding-right: 125px;
+
+	list-style: none;
+}
+
+.infolinks-list li {
+	margin-left: 0px;
+}
+
+.infolinks-list a {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+
+
+
+
