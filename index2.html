@@ -6,7 +6,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style2.css">
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw5iVCBPIpdZLzYEx0xh8LrnHm2vGjRWM"></script>
 </head>
 <body>
 	<div class="color-wrap">
@@ -18,8 +17,16 @@
 							<img src="img/Logo.svg" alt="Логотип GlaccyShop">
 						</a>
 			
-						<ul class="main-nav">
-							<li><a href="#">Каталог</a></li>
+						<ul class="main-nav"> <!-- class="active" для выделенного пункта  li главного меню -->
+							<li><a href="#">Каталог</a> 
+								<ul class="main-nav-catalog display-none"> <!-- class="active-sublink" для выделенного пункта  li подменю -->
+									<li><a href="#" class="new-staff">Новинки</a></li>
+									<li><a href="catalog.html">Сливочное</a></li>
+									<li><a href="#">Щербеты</a></li>
+									<li><a href="#">Фруктовый лед</a></li>
+									<li><a href="#">Мелорин</a></li>
+								</ul>
+							</li>
 							<li><a href="#">Доставка и оплата</a></li>
 							<li><a href="#">О Компании</a></li>
 						</ul>
@@ -29,20 +36,41 @@
 						<section class="user-menu_search">
 							<h2 class="visually-hidden">Поиск по сайту</h2>
 							<a href="#">Поиск</a>
+							<div class="user-menu_search-field display-none">
+								<form action="#" method="get">
+									<input type="search" placeholder="Что ищем?">
+								</form>
+							</div>
 						</section>
 						<section class="user-menu_personal-area">
 							<h2 class="visually-hidden">Личный кабинет</h2>
 							<a href="#">Вход</a>
+							<div class="user-menu-login display-none">
+								<form action="#" method="post">
+									<input type="email" name="user-menu-login-email" placeholder="Электронная почта">
+									<input type="password" name="user-menu-login-name" placeholder="Пароль">
+									<div class="flex-container">
+										<div class="first-child">
+											<button type="submit" class="btn">Войти</button>
+										</div>	
+										<div>	
+											<a class="link" href="#">Забыли пароль?</a>
+											<a class="link" href="#">Новая регистрация</a>
+										</div>
+									</div>
+								</form>
+							</div>
 						</section>
 						<section class="user-menu_basket">
 							<h2 class="visually-hidden">Корзина покупок</h2>
+							<!-- для корзины с товаром класс - .basket-full -->
 							<a href="#">Пусто</a>
 						</section>
 					</div>
 				</div>
 		
 				<div class="header-row">
-					<ul class="breadcrumbs display">
+					<ul class="breadcrumbs main-breadcrumbs">
 						<li><a href="#" class="link">Главная</a></li>
 						<li><a href="#" class="link">Каталог</a></li>
 						<li><a>Сливочное</a></li>
@@ -99,36 +127,36 @@
 
 				<ul class="main-hits">
 					<li class="hits-item">
-						<section class="hits hit-1">
+						<article class="hits hit-1">
 							<img src="img/ice-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 							<div class="price"><span>310₽</span>/кг</div>
 							<h2>Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
 							<a href="#" class="hover-btn btn">Быстрый просмотр</a>
-						</section>
+						</article>
 					</li>
 					<li class="hits-item">
-						<section class="hits hit-2">
+						<article class="hits hit-2">
 							<img src="img/ice-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
 							<div class="price"><span>380₽</span>/кг</div>
 							<h2>Сливочно-кофейное с кусочками шоколада</h2>
 							<a href="#" class="hover-btn btn">Быстрый просмотр</a>
-						</section>
+						</article>
 					</li>
 					<li class="hits-item">
-						<section class="hits hit-3">
+						<article class="hits hit-3">
 							<img src="img/ice-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 							<div class="price"><span>355₽</span>/кг</div>
 							<h2>Сливочно-клубничное с присыпкой из белого шоколада</h2>
 							<a href="#" class="hover-btn btn">Быстрый просмотр</a>
-						</section>
+						</article>
 					</li>
 					<li class="hits-item">	
-						<section class="hits hit-4">
+						<article class="hits hit-4">
 							<img src="img/ice-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
 							<div class="price"><span>415₽</span>/кг</div>
 							<h2>Сливочное крем-брюле с карамельной подливкой</h2>
 							<a href="#" class="hover-btn btn">Быстрый просмотр</a>
-						</section>
+						</article>
 					</li>	
 				</ul>
 
@@ -172,6 +200,9 @@
 			</div>	
 
 			<div class="map" id="map"> <!--на ширину всего вьюпорта-->
+			<div class="mapframe">
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A40787df75e1f1fb75cdff0bc0575e4a5c2cb4eab4aaa92c4d38da44c31a3376a&amp;source=constructor" width="100%" height="430" frameborder="0"></iframe>
+			</div>
 				<div class="container">
 					<img src="img/map.jpg" width="1200" height="430">
 					<section class="site-contacts">
@@ -228,6 +259,24 @@
 			</div>	
 		</footer>
 	</div>	
-	<script type="text/javascript" src="js/googleMap.js"></script>		
+	
+	<div class="modal-overlay display-none">
+		<div class="modal modal-feedback">
+		<form action="#" method="post" class="modal-feedback-form">
+			<button class="modal-close">Закрыть</button>
+			<b>Мы обязательно вам ответим!</b>
+			<p>
+				<input type="text" name="feedback-user-name" placeholder="Как вас зовут?">
+			</p>
+			<p>
+				<input type="email" name="feedback-user-email" placeholder="Ваша почта для ответа?">
+			</p>
+			<p>
+				<textarea name="feedback-user-text" placeholder="Напишите что-нибудь..."></textarea>
+			</p>
+			<button class="btn btn-right">Отправить</button>
+		</form>
+	</div>
+	</div>
 </body>
 </html>
